@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image:url(Images/bgSAMPLE.PNG);
+}
+a {
+    text-decoration: none;
+}
+
+/* Start of Header Section */
+header {
+    background-color: #101110;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+
+    /* Make header follow you like a ghost */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.left {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left div{
+    margin-right: 10px;
+}
+
+.left img{
+    height: 25px;
+    margin-left: 25px;
+}
+
+.left img:hover {
+    cursor: pointer;
+}
+
+.right {
+    display: flex;
+    margin-right: 30px;
+}
+
+.right div{
+    margin-right: 10px;
+}
+.headerButton a{
+    text-decoration: none;
+}
+.headerButton a p {
+    border:none;
+    text-decoration: none;
+    background: transparent;
+    padding: 7.5px 16px;  /*Top Right Bottom Left*/
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    line-height: 120%;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.headerButton p:hover{
+    background-color: #323332;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
+
+.underlineButtonHeader {
+    background-color: #D5924B;
+    margin-top: 10px;
+    width: 100%;
+    height: 4px;
+    border-radius: 25px;
+    display: none;
+}
+
+.headerButton p:hover + .underlineButtonHeader {
+    display: block;
+}
+.searchImage {
+    display: flex;
+    align-items: center;
+}
+.searchImage img{
+    height: 20px;
+    background-color: #2B2B28;
+    border-radius: 15px;
+    padding: 12px;
+}
+
+.searchImage:hover {
+    cursor: pointer;
+}
+
+.globeIcon {
+    display: flex;
+    align-items: center;
+}
+.globeIcon img{
+    height: 17px;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.globeIcon img:hover {
+    background-color: #2B2B28;
+    cursor: pointer;
+}
+
+.signInButton {
+    padding: 7.5px 16px;  /*Top Right Bottom Left*/
+    background-color: #2B2B28;
+    border-radius: 5px;
+    line-height: 120%;
+}
+
+.signInButtonContainer {
+    display: flex;
+    align-items: center;
+    letter-spacing: .08em;
+}
+
+.signInButton:hover {
+    cursor: pointer;
+}
+
+.playNowButton {
+    line-height: 120%;
+    background-color: #AF7A32;
+    color: black;
+    padding: 7.5px 16px;
+    border-radius: 10px;
+}
+
+.playNowButton:hover {
+    cursor: pointer;
+}
+
+.playNowButtonContainer {
+    display: flex;
+    align-items: center;
+    
+}
+/* End of Header Section */
+
+
+/* Start of Main Section */
+
+/* Start of Buttons over Background */
+
+.backgroundAndButtons {
+    width: 100%;
+    position: relative;
+}
+
+.backgroundAndButtons video {
+    width: 100%;
+    height: auto;
+}
+
+.luxBGbuttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+}
+
+.playNowCenterButton{ 
+    margin-top: 50px;
+    /* down is style */
+    color: white;
+    background-color: #D19F52;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    line-height: 120%;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    width: 100px;
+    margin-bottom: 15px;
+}
+.playNowCenterButton:hover {
+    cursor: pointer;
+    background-color: #EAB65C;
+}
+.pcVerAndIOS {
+    width: 110px;
+    height: auto;
+}
+.googlePlay {
+    height: 37px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.pcVerAndIOS, .googlePlay:hover {
+    cursor: pointer;
+}
+
+.availableOn {
+    font-size: 13px;
+    font-weight: 700;
+    color: #696053;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+
+
+/* End of Buttons over Background */
+
+
+/* Start of Legendary Section */
+
+.legendaryContainer {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+}
+
+.legendaryImage {
+    position: relative;
+    margin-top: -10vh;
+
+}
+.legendaryText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 320px;
+    max-height: 325px;
+    margin-left: 100px;
+    margin-right: 100px;
+    letter-spacing: 0.6px;
+}
+
+.legendaryText img {
+    width: 320px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.legendaryBig {
+    font-size: 36px;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    color: #c49250;
+    line-height: 45px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.legendarySmall {
+    color: #D5D2C9;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: left;
+    font-family: sans-serif;
+    margin-left: 10px;
+}
+
+/* End of Legendary Section */
+
+/* Star of Three Images under Legendary */
+
+.threeImagesContainer {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+
+.threeImages img:nth-child(2) {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+/* End of Three Regions under Legendary */
+
+
+/* Start of Conquer and Nations */
+
+.regionsBar {
+    background-image: url(Images/regionsBar.PNG);
+    background-repeat: no-repeat;
+    background-size:auto;
+    min-height: 100%;
+    background-position: center;
+}
+
+.regionsText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.regionsText p:nth-child(1) {
+    font-size: 36px;
+    font-family: "Oswald";
+    color: #D5D2C9;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+}
+
+.regionsText p:nth-child(2) {
+    color: #c0b6a0;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.regionsCards {
+    width: 1234px;
+    height: 510px;
+    background-color: #151415;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.regionsCards img {
+    height: 400px;
+    width: 245px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.regionsCardsContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: -1.3px;
+}
+
+.regionsContainer {
+    margin-bottom: 100px;
+}
+
+
+
+/* End of Conquer and Nations */
+
+
+/* Start of Hamburger */
+
+/* Start of Mobile Adaptation */
+#hamburger-icon {
+    display: none;
+    cursor: pointer;
+}
+  
+#bar1, #bar2, #bar3 {
+    height: 2px;
+    width: 20px;
+    background-color: white; 
+
+    z-index: 999;
+}
+
+#bar1, #bar2 {
+    margin-bottom: 3px;
+}
+
+.barContainer {
+    background-color: #292929;
+    margin-right: 30px;
+    padding: 15px;
+    border-radius: 15px;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+}
+
+.open #bar1 {
+    -webkit-transform: rotate(-45deg) translate(-3px, 4px);
+    transform: rotate(-45deg) translate(-3px, 4px);
+  }
+  
+  .open #bar2 {
+    opacity: 0;
+  }
+  
+  .open #bar3 {
+    -webkit-transform: rotate(45deg) translate(-3px, -4px);
+    transform: rotate(45deg) translate(-3px, -4px);
+  }
+  
+  .open #mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+#mobile-menu {
+    background-color: #1F1F1F;
+    border-top: 1px solid black;
+    display: none;
+    position: absolute;
+    top: -1px;
+    width: 450px;
+    height: 100vh;
+    right: 0;
+    z-index: 1;
+}
+
+
+
+.searchMobile img {
+    height: 20px;
+    margin-left: 10px;
+}
+
+.searchMobile {
+    margin-top: 20px;
+    background-color: #333333;
+    width: 400px;
+    height: 40px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.logoMobile {
+    margin-top: 20px;
+    height: 35px;
+    margin-right: 300px;
+}
+
+.mobileLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.mobileLinks a {
+    width: 400px;
+    padding: 15px;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.mobileLinks a:hover {
+    cursor: pointer;
+    background-color: #333333;
+
+}
+
+.signInMobile, .playNowMobile {
+    width: 400px;
+    padding: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    background-color: #333333;
+    border: 0px;
+    border-radius: 10px;  
+}
+
+.playNowMobile {
+    background-color: #AF7A32;
+}
+
+.signInMobile:hover {
+    cursor: pointer;
+}
+
+.playNowMobile:hover {
+    cursor: pointer;
+}
+
+
+
+
+   
+ 
+  
+    @media only screen and (max-width: 1000px) {
+    .right {
+      display: none;
+    }
+    .left .headerButton {
+        display: none;
+    }
+    #hamburger-icon {
+      display: block;
+    }
+  }
+
+
+/* End of Mobile */
+/* End of Hamburger */
+
+
+
+/* Start of Footer Section */
+
+
+
+.footerGrayLine {
+    background-color: #292929;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footerGrayLine p {
+    padding: 7.5px 16px;  /*Top Right Bottom Left*/
+    border-radius: 5px;
+    line-height: 120%;
+}
+
+.footerGrayLine p:hover {
+    background-color: #454445;
+    cursor: pointer;
+}
+.footerSocialMedia {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.footerSocialMedia img {
+    height: 17px;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: #282929;
+    margin-right: 20px;
+}
+.footerSocialMedia img:hover {
+    cursor: pointer;
+}
+
+.grayBackgroundFooter {
+    background-color: #101110;
+    color: white;
+}
+
+.riotLogoFooter {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+.riotLogoFooter img {
+    width: 100px;
+}
+
+.riotLogoFooterUnder {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.teenWarningContainer {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.teenWarning {
+    background-color: #292929;
+    width: 260px;
+    height: 150px;
+    border-radius: 5px;
+    display: flex;
+}
+.teenWarning img {
+    height: 110px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.teenWarning ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.teenWarning li {
+    margin-top: 5px;
+}
+
+.privacyPolicyButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.privacyPolicyButtons p {
+    padding: 7.5px 16px;  /*Top Right Bottom Left*/
+    border-radius: 5px;
+    line-height: 120%;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.privacyPolicyButtons p:hover {
+    background-color: #454445;
+    cursor: pointer;
+}
+
+/* End of Footer Section */
+
+
+/* Start of Mobile Optimizations */
+
+@media only screen and (max-width: 1400px) {
+    .legendaryImage {
+        width: 100%;
+        margin-top: -5vh;
+    }
+  }
+
+  @media only screen and (max-width: 1236px) {
+    
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .legendaryImage {
+        max-width: 90vw;
+        position: relative;
+        margin-top: -10vh;
+        margin-bottom: 30px;
+    }
+    .luxBGbuttons{
+        top: 40%;
+    }
+    .legendaryContainer {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+
+    .legendaryText {
+        max-width: 80vw;
+        text-align: center;
+        align-items: center;
+    }
+
+    .legendarySmall {
+        text-align: center;
+    }
+
+    .legendaryText img {
+        width: 200px;
+    }
+    .legendaryBig {
+        font-size: 31px;
+    }
+    .regionsImgMobile img:nth-child(4) {
+        display: none;
+    }
+
+  }
+  @media only screen and (max-width: 1000px) {
+    .threeImages img:nth-child(1) {
+        display: none;
+    }
+    .threeImages img:nth-child(2) {
+        margin-left: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .footerGrayLine {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+    }
+    .backgroundAndButtons video {
+        margin-top: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .backgroundAndButtons video {
+        display: none;
+    }
+    .backgroundAndButtons {
+        background-image: url(Images/luxMobile.PNG);
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    .luxBGbuttons {
+        top: 60vh;
+    }
+    .regionsImgMobile img:nth-child(3) {
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .threeImages img:nth-child(3) {
+        display: none;
+    }
+    .threeImages img:nth-child(2) {
+        margin-right: 0px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    #mobile-menu {
+        width: 100vw;
+        height: 100vh;
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+    .regionsImgMobile img:nth-child(2) {
+        display: none;
+    }
+  }
+
+  
+
+/* End of Mobile Optimizations */
